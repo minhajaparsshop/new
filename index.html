@@ -1,90 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Resume of Minhaj Shahon">
+    <title>Minhaj Shahon - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .contact-info p, .skills ul, .education ul, .experience ul {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .skills li, .education li, .experience li {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-    Dekhi ki hoy.
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat neque, velit voluptas animi doloremque
-        nemo
-        est nisi sequi praesentium!</p>
-    <div>
-        its a list
-        <ol>
-            <li>Mango</li>
-            <li>Orange</li>
-            <li>Litchi</li>
-        </ol>
-        <ol type="A" start="3">
-            <li>Pen</li>
-            <li>Pencil</li>
-        </ol>
-        <ul>
-            <li>Pen</li>
-            <li>Pencil</li>
-            <li>Eraser</li>
-        </ul>
-        <ul type="square">
-            <li>Notebook</li>
-            <li>Marker</li>
-        </ul>
+    <header>
+        <h1>Minhaj Shahon</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <div class="container">
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: minhaj@apers.shop </p>
+            <p>Phone: +8801618635427 </p>
+            <p>Location: City, Country</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/minhajshahon" target="_blank">linkedin.com/in/minhajshahon</a></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Responsive Web Design</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Science in Computer Science</strong>, University of ABC, 2020 - 2024</li>
+                <li><strong>High School Diploma</strong>, XYZ High School, 2016 - 2020</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Web Developer Intern</strong>, ABC Corp. (June 2023 - August 2023)
+                    <ul>
+                        <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with the design team to enhance UI/UX.</li>
+                    </ul>
+                </li>
+                <li><strong>Freelance Web Developer</strong> (January 2022 - Present)
+                    <ul>
+                        <li>Built custom websites for small businesses and individuals.</li>
+                        <li>Integrated e-commerce solutions and payment gateways.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
     </div>
-    <div>
-        its a table
-        <table border="2">
-            <caption>table caption</caption>
-            <tr>
-                <th>Nameeeee</th>
-                <th>Ageeeeee</th>
-            </tr>
-            <tr align="center">
-                <td>Harry</td>
-                <td>100</td>
-            </tr>
-        </table>
-    </div>
-    <br>
 
-    <form action="/submit" method="post">
-        <!-- Text input for username -->
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
-
-        <!-- Password input -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-
-        <!-- Radio buttons for gender -->
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <br>
-        <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
-        <br>
-        <select name="fruits">
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="cherry">Cherry</option>
-        </select> <br>
-        <input type="submit" value="Submit">
-    </form>
-
-
-
-    
-
-
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Minhaj Shahon. All Rights Reserved.</p>
+    </footer>
 </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Minhaj Shahon">
+    <title>Minhaj Shahon - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .contact-info p, .skills ul, .education ul, .experience ul {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .skills li, .education li, .experience li {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minhaj Shahon</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <div class="container">
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: minhaj.shahon@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: City, Country</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/minhajshahon" target="_blank">linkedin.com/in/minhajshahon</a></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Responsive Web Design</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Science in Computer Science</strong>, University of ABC, 2020 - 2024</li>
+                <li><strong>High School Diploma</strong>, XYZ High School, 2016 - 2020</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Web Developer Intern</strong>, ABC Corp. (June 2023 - August 2023)
+                    <ul>
+                        <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with the design team to enhance UI/UX.</li>
+                    </ul>
+                </li>
+                <li><strong>Freelance Web Developer</strong> (January 2022 - Present)
+                    <ul>
+                        <li>Built custom websites for small businesses and individuals.</li>
+                        <li>Integrated e-commerce solutions and payment gateways.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Minhaj Shahon. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
