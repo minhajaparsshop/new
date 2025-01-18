@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    Dekhi ki hoy.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat neque, velit voluptas animi doloremque
+        nemo
+        est nisi sequi praesentium!</p>
+    <div>
+        its a list
+        <ol>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Litchi</li>
+        </ol>
+        <ol type="A" start="3">
+            <li>Pen</li>
+            <li>Pencil</li>
+        </ol>
+        <ul>
+            <li>Pen</li>
+            <li>Pencil</li>
+            <li>Eraser</li>
+        </ul>
+        <ul type="square">
+            <li>Notebook</li>
+            <li>Marker</li>
+        </ul>
+    </div>
+    <div>
+        its a table
+        <table border="2">
+            <caption>table caption</caption>
+            <tr>
+                <th>Nameeeee</th>
+                <th>Ageeeeee</th>
+            </tr>
+            <tr align="center">
+                <td>Harry</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+        <br>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
