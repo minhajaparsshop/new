@@ -5,260 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Resume of Minhaj Shahon">
     <title>Minhaj Shahon - Resume</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+        /* Background animation */
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+        .gradient-bg {
+            background: linear-gradient(45deg, #f06, #48c6ef, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-
-        .contact-info p, .skills ul, .education ul, .experience ul {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .skills li, .education li, .experience li {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        /* Image section styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Minhaj Shahon</h1>
-        <p>Web Developer | Designer | Problem Solver</p>
-    </header>
+<body class="gradient-bg text-white">
 
-    <div class="container">
-        <!-- Contact Information Section -->
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: minhaj@apers.shop </p>
-            <p>Phone: +8801618635427 </p>
-            <p>Location: City, Country</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/minhajshahon" target="_blank">linkedin.com/in/minhajshahon</a></p>
+    <!-- Main Container -->
+    <div class="container mx-auto p-6">
+
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <!-- Profile Image -->
+            <div class="flex justify-center mb-6">
+                <div class="w-36 h-36 bg-gray-800 rounded-full overflow-hidden">
+                    <!-- Placeholder for profile image -->
+                    <img src="https://i.postimg.cc/h48ZMfzq/318662153-1556164124846210-6643210565606415944-n.jpg" alt="Minhaj Shahon" class="profile-img">
+                </div>
+            </div>
+            <!-- Name & Tagline -->
+            <h1 class="text-4xl font-bold mb-2">Minhaj Shahon</h1>
+            <p class="text-xl">Web Developer | Designer | Problem Solver</p>
+        </header>
+
+        <!-- Contact Info Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-4">Contact Information</h2>
+            <ul class="space-y-3">
+                <li><i class="fas fa-phone-alt"></i> <span>Phone: +8801618635427</span></li>
+                <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/amiminhajshaon" target="_blank" class="hover:text-blue-400">Facebook</a></li>
+            </ul>
         </section>
 
         <!-- Skills Section -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>React, Node.js</li>
-                <li>UI/UX Design</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Responsive Web Design</li>
-                <li>Database Management (MySQL, MongoDB)</li>
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">HTML5</li>
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">CSS3</li>
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">JavaScript</li>
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">React</li>
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">Node.js</li>
+                <li class="bg-gray-800 p-4 rounded-lg shadow-lg">UI/UX Design</li>
             </ul>
         </section>
 
         <!-- Education Section -->
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-4">Education</h2>
+            <ul class="space-y-3">
                 <li><strong>Bachelor of Science in Computer Science</strong>, University of ABC, 2020 - 2024</li>
                 <li><strong>High School Diploma</strong>, XYZ High School, 2016 - 2020</li>
             </ul>
         </section>
 
         <!-- Experience Section -->
-        <section class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Web Developer Intern</strong>, ABC Corp. (June 2023 - August 2023)
-                    <ul>
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-4">Experience</h2>
+            <ul class="space-y-4">
+                <li>
+                    <strong>Web Developer Intern</strong>, ABC Corp. (June 2023 - August 2023)
+                    <ul class="ml-6 list-disc">
                         <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
                         <li>Collaborated with the design team to enhance UI/UX.</li>
                     </ul>
                 </li>
-                <li><strong>Freelance Web Developer</strong> (January 2022 - Present)
-                    <ul>
+                <li>
+                    <strong>Freelance Web Developer</strong> (January 2022 - Present)
+                    <ul class="ml-6 list-disc">
                         <li>Built custom websites for small businesses and individuals.</li>
                         <li>Integrated e-commerce solutions and payment gateways.</li>
                     </ul>
                 </li>
             </ul>
         </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-16">
+            <p class="text-sm">&copy; 2025 Minhaj Shahon. All Rights Reserved.</p>
+        </footer>
+
     </div>
 
-    <footer>
-        <p>&copy; 2025 Minhaj Shahon. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Minhaj Shahon">
-    <title>Minhaj Shahon - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-
-        .contact-info p, .skills ul, .education ul, .experience ul {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .skills li, .education li, .experience li {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Minhaj Shahon</h1>
-        <p>Web Developer | Designer | Problem Solver</p>
-    </header>
-
-    <div class="container">
-        <!-- Contact Information Section -->
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: minhaj.shahon@example.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Location: City, Country</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/minhajshahon" target="_blank">linkedin.com/in/minhajshahon</a></p>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>React, Node.js</li>
-                <li>UI/UX Design</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Responsive Web Design</li>
-                <li>Database Management (MySQL, MongoDB)</li>
-            </ul>
-        </section>
-
-        <!-- Education Section -->
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Science in Computer Science</strong>, University of ABC, 2020 - 2024</li>
-                <li><strong>High School Diploma</strong>, XYZ High School, 2016 - 2020</li>
-            </ul>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Web Developer Intern</strong>, ABC Corp. (June 2023 - August 2023)
-                    <ul>
-                        <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
-                        <li>Collaborated with the design team to enhance UI/UX.</li>
-                    </ul>
-                </li>
-                <li><strong>Freelance Web Developer</strong> (January 2022 - Present)
-                    <ul>
-                        <li>Built custom websites for small businesses and individuals.</li>
-                        <li>Integrated e-commerce solutions and payment gateways.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Minhaj Shahon. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
